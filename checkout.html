@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout & Booking - IST Crown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-crown gold-crown"></i>
+          IST<span>Crown</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="places.html">Places</a>
+          <a href="tours.html">Tours</a>
+          <a href="products.html">Products</a>
+          <a href="404.html">404 Page</a>
+          <a href="checkout.html" class="active">Checkout</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="checkout.html" class="cart-icon" title="My Bookings">
+            <i class="fas fa-ticket-alt"></i>
+            <span class="badge">2</span>
+          </a>
+          <a href="login.html" class="btn-secondary">Book Tour</a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Confirm Your Booking</h1>
+          <p>
+            Complete your details below to finalize your Istanbul tour
+            reservations.
+          </p>
+        </div>
+      </section>
+
+      <!-- Checkout Section -->
+      <section class="checkout-section">
+        <div class="container checkout-grid">
+          <!-- Checkout Form -->
+          <div class="checkout-form-container">
+            <h2><i class="fas fa-user-check"></i> Passenger Details</h2>
+            <form
+              class="checkout-form"
+              action="https://formspree.io/f/mbgrzrnd"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input name="Name" type="text" id="firstName" />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input name="LastName" type="text" id="lastName" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input name="email" type="email" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone / WhatsApp</label>
+                  <input name="phone" type="tel" id="phone" />
+                </div>
+              </div>
+
+              <h2><i class="fas fa-credit-card"></i> Payment Method</h2>
+              <div class="payment-options">
+                <label class="payment-option">
+                  <input type="radio" name="payment" checked />
+                  <span>Credit / Debit Card</span>
+                  <i class="fab fa-cc-visa"></i>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" />
+                  <span>Pay on Arrival</span>
+                  <i class="fas fa-money-bill-wave"></i>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input name="cardNumber" type="text" id="cardNumber" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiry">Expiry Date</label>
+                  <input name="expiry" type="text" id="expiry" />
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input name="cvv" type="text" id="cvv" />
+                </div>
+              </div>
+
+              <button type="submit" class="btn-primary checkout-btn">
+                <i class="fas fa-lock"></i> Complete Booking ($105)
+              </button>
+            </form>
+          </div>
+
+          <!-- Order Summary Sidebar -->
+          <div class="order-summary">
+            <h2>Booking Summary</h2>
+            <div class="summary-item">
+              <div class="item-info">
+                <h4>Bosphorus Luxury Cruise</h4>
+                <p>Date: Tomorrow | 2 Persons</p>
+              </div>
+              <span class="item-price">$45</span>
+            </div>
+
+            <div class="summary-item">
+              <div class="item-info">
+                <h4>Old City Guided Tour</h4>
+                <p>Date: Aug 18 | 1 Person</p>
+              </div>
+              <span class="item-price">$60</span>
+            </div>
+
+            <div class="summary-totals">
+              <div class="total-row">
+                <span>Subtotal</span>
+                <span>$105</span>
+              </div>
+              <div class="total-row">
+                <span>Service Fee</span>
+                <span>$0</span>
+              </div>
+              <div class="total-row grand-total">
+                <span>Total Amount</span>
+                <span>$105</span>
+              </div>
+            </div>
+
+            <div class="security-badge">
+              <i class="fas fa-shield-alt"></i>
+              <p>100% Secure Checkout with 256-Bit SSL Encryption</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>Istanbul<span>Crown</span></h3>
+          <p>
+            Your ultimate companion for discovering tours, Bosphorus cruises,
+            and local experiences across Istanbul.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">City Experiences</a></li>
+            <li><a href="products.html">Featured Tours</a></li>
+            <li><a href="checkout.html">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Sultanahmet Square, Fatih,
+            Istanbul
+          </p>
+          <p><i class="fas fa-phone"></i> +90 123 456 78 99</p>
+          <p><i class="fas fa-envelope"></i> info@istanbulCrown.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <p>&copy; 2026 IstanbulCrown. Made by Shadow.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- start of JavaScript -->
+    <script src="app.js"></script>
+    <!-- end of JavaScript -->
+  </body>
+</html>

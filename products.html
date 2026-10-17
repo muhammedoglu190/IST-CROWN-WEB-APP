@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Packages & Products - IST Crown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-crown gold-crown"></i>
+          IST<span>Crown</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="places.html">Places</a>
+          <a href="tours.html">Tours</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="404.html">404 Page</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="checkout.html" class="cart-icon" title="My Bookings">
+            <i class="fas fa-ticket-alt"></i>
+            <span class="badge">2</span>
+          </a>
+          <a href="login.html" class="btn-secondary">Book Tour</a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Tour Packages & Experiences</h1>
+          <p>
+            Book premium Istanbul guided tours, luxury cruises, and curated
+            travel passes.
+          </p>
+        </div>
+      </section>
+
+      <section class="stats-bar">
+        <div class="container stats-container">
+          <div class="stat-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Best Price Guarantee</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-bolt"></i>
+            <span>Instant Confirmation</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-headset"></i>
+            <span>24/7 Local Support</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="container products-layout">
+          <aside class="product-sidebar">
+            <div class="filter-group">
+              <h3>Categories</h3>
+              <label><input type="checkbox" checked /> All Packages</label>
+              <label><input type="checkbox" /> Bosphorus Cruises</label>
+              <label><input type="checkbox" /> Historic Guided Tours</label>
+              <label><input type="checkbox" /> VIP & Private Transfers</label>
+              <label><input type="checkbox" /> City Day Passes</label>
+            </div>
+
+            <div class="filter-group">
+              <h3>Price Range</h3>
+              <input
+                type="range"
+                min="10"
+                max="200"
+                value="100"
+                class="price-slider"
+              />
+              <div class="price-labels">
+                <span>$10</span>
+                <span>$200</span>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3>Rating</h3>
+              <label
+                ><input type="radio" name="rating" /> 4.5 Stars & above</label
+              >
+              <label
+                ><input type="radio" name="rating" /> 4.0 Stars & above</label
+              >
+            </div>
+          </aside>
+
+          <div class="product-catalog">
+            <div class="catalog-header">
+              <p>Showing <strong>6 Tour Packages</strong></p>
+              <select class="sort-select">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Highest Rated</option>
+              </select>
+            </div>
+
+            <div class="products-grid">
+              <!-- Product Card 1 -->
+              <div class="product-card">
+                <span class="badge-tag best-seller">Bestseller</span>
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80&quot;);
+                  "
+                ></div>
+                <div class="product-body">
+                  <div class="rating">
+                    <i class="fas fa-star"></i> 4.9 (128 reviews)
+                  </div>
+                  <h3>Bosphorus Luxury Dinner Cruise</h3>
+                  <p class="product-summary">
+                    Full evening cruise with Turkish dinner, cultural show, and
+                    hotel transfers.
+                  </p>
+                  <div class="product-meta">
+                    <span><i class="far fa-clock"></i> 4 Hours</span>
+                    <span><i class="fas fa-utensils"></i> Dinner Included</span>
+                  </div>
+                  <div class="product-action">
+                    <div class="price-box">
+                      <span class="old-price">$65</span>
+                      <span class="current-price">$45</span>
+                    </div>
+                    <a href="checkout.html" class="btn-primary-sm"
+                      ><i class="fas fa-cart-plus"></i> Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div class="product-card">
+                <span class="badge-tag discount">-20% OFF</span>
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=600&q=80&quot;);
+                  "
+                ></div>
+                <div class="product-body">
+                  <div class="rating">
+                    <i class="fas fa-star"></i> 4.8 (95 reviews)
+                  </div>
+                  <h3>Old City Full-Day Guided Tour</h3>
+                  <p class="product-summary">
+                    Skip-the-line access to Hagia Sophia, Blue Mosque, and
+                    Topkapi Palace.
+                  </p>
+                  <div class="product-meta">
+                    <span><i class="far fa-clock"></i> 7 Hours</span>
+                    <span><i class="fas fa-user-tie"></i> Live Guide</span>
+                  </div>
+                  <div class="product-action">
+                    <div class="price-box">
+                      <span class="old-price">$75</span>
+                      <span class="current-price">$60</span>
+                    </div>
+                    <a href="checkout.html" class="btn-primary-sm"
+                      ><i class="fas fa-cart-plus"></i> Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div class="product-card">
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&w=600&q=80&quot;);
+                  "
+                ></div>
+                <div class="product-body">
+                  <div class="rating">
+                    <i class="fas fa-star"></i> 4.7 (64 reviews)
+                  </div>
+                  <h3>Princes' Islands Boat Trip</h3>
+                  <p class="product-summary">
+                    Round-trip ferry tickets, lunch on Büyükada, and electric
+                    vehicle island tour.
+                  </p>
+                  <div class="product-meta">
+                    <span><i class="far fa-clock"></i> 8 Hours</span>
+                    <span><i class="fas fa-ship"></i> Boat Included</span>
+                  </div>
+                  <div class="product-action">
+                    <div class="price-box">
+                      <span class="current-price">$40</span>
+                    </div>
+                    <a href="checkout.html" class="btn-primary-sm"
+                      ><i class="fas fa-cart-plus"></i> Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div class="product-card">
+                <span class="badge-tag best-seller">Popular</span>
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=600&q=80&quot;);
+                  "
+                ></div>
+                <div class="product-body">
+                  <div class="rating">
+                    <i class="fas fa-star"></i> 4.9 (210 reviews)
+                  </div>
+                  <h3>Istanbul Digital Express Pass</h3>
+                  <p class="product-summary">
+                    Unlimited public transit access + entry pass for top 5
+                    museums.
+                  </p>
+                  <div class="product-meta">
+                    <span><i class="far fa-clock"></i> 3 Days</span>
+                    <span><i class="fas fa-qrcode"></i> Mobile Pass</span>
+                  </div>
+                  <div class="product-action">
+                    <div class="price-box">
+                      <span class="current-price">$55</span>
+                    </div>
+                    <a href="checkout.html" class="btn-primary-sm"
+                      ><i class="fas fa-cart-plus"></i> Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 5 -->
+              <div class="product-card">
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=600&q=80&quot;);
+                  "
+                ></div>
+                <div class="product-body">
+                  <div class="rating">
+                    <i class="fas fa-star"></i> 4.6 (42 reviews)
+                  </div>
+                  <h3>Grand Bazaar Shopping & Food Tour</h3>
+                  <p class="product-summary">
+                    Guided tasting of authentic Turkish delights, spices, and
+                    coffee with local experts.
+                  </p>
+                  <div class="product-meta">
+                    <span><i class="far fa-clock"></i> 3.5 Hours</span>
+                    <span><i class="fas fa-coffee"></i> Tastings Included</span>
+                  </div>
+                  <div class="product-action">
+                    <div class="price-box">
+                      <span class="current-price">$35</span>
+                    </div>
+                    <a href="checkout.html" class="btn-primary-sm"
+                      ><i class="fas fa-cart-plus"></i> Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 6 -->
+              <div class="product-card">
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=600&q=80&quot;);
+                  "
+                ></div>
+                <div class="product-body">
+                  <div class="rating">
+                    <i class="fas fa-star"></i> 4.9 (88 reviews)
+                  </div>
+                  <h3>Private Airport Luxury Transfer</h3>
+                  <p class="product-summary">
+                    Direct VIP Mercedes van service between IST/SAW airport and
+                    your hotel.
+                  </p>
+                  <div class="product-meta">
+                    <span><i class="far fa-clock"></i> One Way</span>
+                    <span><i class="fas fa-car"></i> VIP Vehicle</span>
+                  </div>
+                  <div class="product-action">
+                    <div class="price-box">
+                      <span class="current-price">$50</span>
+                    </div>
+                    <a href="checkout.html" class="btn-primary-sm"
+                      ><i class="fas fa-cart-plus"></i> Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>Istanbul<span>Crown</span></h3>
+          <p>
+            Your ultimate companion for discovering tours, Bosphorus cruises,
+            and local experiences across Istanbul.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">City Experiences</a></li>
+            <li><a href="products.html">Featured Tours</a></li>
+            <li><a href="checkout.html">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Sultanahmet Square, Fatih,
+            Istanbul
+          </p>
+          <p><i class="fas fa-phone"></i> +90 123 456 78 99</p>
+          <p><i class="fas fa-envelope"></i> info@istanbulCrown.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <p>&copy; 2026 IstanbulCrown. Made by Shadow.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- start of JavaScript -->
+    <script src="app.js"></script>
+    <!-- end of JavaScript -->
+  </body>
+</html>

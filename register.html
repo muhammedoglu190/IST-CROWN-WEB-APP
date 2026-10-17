@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register - IST Crown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-crown gold-crown"></i>
+          IST<span>Crown</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="places.html">Places</a>
+          <a href="tours.html">Tours</a>
+          <a href="products.html">Products</a>
+          <a href="404.html">404 Page</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="login.html" class="active">Login</a>
+          <a href="register.html">Register</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="checkout.html" class="cart-icon" title="My Bookings">
+            <i class="fas fa-ticket-alt"></i>
+            <span class="badge">2</span>
+          </a>
+          <a href="login.html" class="btn-secondary">Book Tour</a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <main>
+      <section class="auth-dual-section">
+        <div class="container">
+          <div class="auth-dual-grid">
+            <!-- start of Login -->
+            <div class="auth-box login-box">
+              <div class="auth-header">
+                <i class="fas fa-sign-in-alt auth-icon"></i>
+                <h2>Login</h2>
+                <p>Welcome back! Enter your details to log in.</p>
+              </div>
+
+              <form
+                class="auth-form"
+                action="https://formspree.io/f/mbgrzrnd"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="loginEmail">Email Address</label>
+                  <div class="input-icon-wrap">
+                    <i class="fas fa-envelope"></i>
+                    <input name="loginEmail" type="email" id="loginEmail" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="loginPassword">Password</label>
+                  <div class="input-icon-wrap">
+                    <i class="fas fa-lock"></i>
+                    <input name="loginPassword" type="password" id="loginPassword" />
+                  </div>
+                </div>
+
+                <div class="auth-options">
+                  <label class="remember-me">
+                    <input name="checkbox" type="checkbox" /> Remember me
+                  </label>
+                  <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn-primary auth-btn">
+                  Log In
+                </button>
+              </form>
+            </div>
+
+            <div class="auth-divider">
+              <span>OR</span>
+            </div>
+
+            <!-- start of Register -->
+            <div class="auth-box register-box">
+              <div class="auth-header">
+                <i class="fas fa-user-plus auth-icon"></i>
+                <h2>Register</h2>
+                <p>New here? Create an account to start booking.</p>
+              </div>
+
+              <form
+                class="auth-form"
+                action="https://formspree.io/f/mbgrzrnd"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="regName">Full Name</label>
+                  <div class="input-icon-wrap">
+                    <i class="fas fa-user"></i>
+                    <input name="regName" type="text" id="regName" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regEmail">Email Address</label>
+                  <div class="input-icon-wrap">
+                    <i class="fas fa-envelope"></i>
+                    <input name="regEmail" type="email" id="regEmail" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regPassword">Password</label>
+                  <div class="input-icon-wrap">
+                    <i class="fas fa-lock"></i>
+                    <input name="regPassword" type="password" id="regPassword" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regConfirmPassword">Confirm Password</label>
+                  <div class="input-icon-wrap">
+                    <i class="fas fa-shield-alt"></i>
+                    <input name="regConfirmPassword" type="password" id="regConfirmPassword" />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-secondary auth-btn">
+                  Create Account
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>Istanbul<span>Crown</span></h3>
+          <p>
+            Your ultimate companion for discovering tours, Bosphorus cruises,
+            and local experiences across Istanbul.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">City Experiences</a></li>
+            <li><a href="products.html">Featured Tours</a></li>
+            <li><a href="checkout.html">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Sultanahmet Square, Fatih,
+            Istanbul
+          </p>
+          <p><i class="fas fa-phone"></i> +90 123 456 78 99</p>
+          <p><i class="fas fa-envelope"></i> info@istanbulCrown.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <p>&copy; 2026 IstanbulCrown. Made by Shadow.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- start of JavaScript -->
+    <script src="app.js"></script>
+    <!-- end of JavaScript -->
+  </body>
+</html>
